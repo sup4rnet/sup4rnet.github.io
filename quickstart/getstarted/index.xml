@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting started | SUP4RNET</title><link>https://sup4rnet.github.io/quickstart/getstarted/</link><atom:link href="https://sup4rnet.github.io/quickstart/getstarted/index.xml" rel="self" type="application/rss+xml"/><description>Getting started</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate><image><url>https://sup4rnet.github.io/media/icon_huae01d6fbd47227582bbdbe187fcb584f_521710_512x512_fill_lanczos_center_3.png</url><title>Getting started</title><link>https://sup4rnet.github.io/quickstart/getstarted/</link></image><item><title>Request account</title><link>https://sup4rnet.github.io/quickstart/getstarted/cluster-access/</link><pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate><guid>https://sup4rnet.github.io/quickstart/getstarted/cluster-access/</guid><description>&lt;h2 id="steps-to-access-the-cluster">Steps to access the cluster&lt;/h2>
+&lt;div class="hb-steps">
+&lt;h3 id="sign-nda-with-intel">Sign NDA with Intel&lt;/h3>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">You can skip this step if you do not plan to work with P4 switches&lt;/span>
+&lt;/div>
+&lt;p>Access to Intel documentations and Intel software for Tofino programmable switch family is released under confidentiality and non disclosure agreement (NDA).&lt;/p>
+&lt;p>Hence, the very first step in order to work with the switches is to sign a personal NDA with Intel. The procedure is as follows:&lt;/p>
+&lt;ul>
+&lt;li>The head of your research group must apply for joining the &lt;a href="https://www.intel.com/content/www/us/en/products/docs/network-io/intelligent-fabric-processors/connectivity-education-hub/research-program.html">Intel® Connectivity Research Program&lt;/a>.&lt;/li>
+&lt;li>Once the application is accepted, your research group will be assigned a new identifier &lt;code>rgrp_id&lt;/code>.&lt;/li>
+&lt;li>From now on, all members of the research group can submit an application for themselves to join the program. Access &lt;a href="https://formfacade.com/public/116697843151790595985/all/form/1FAIpQLScQZrJX1oQOq8xW45e_DL6cSF11RX7aF7tZc7fdp2asVeHvAw?entry.1609118023=231103715X">Intel® Connectivity Research Program User Application&lt;/a> and fill the form using for the Group ID field &lt;code>rgrp_id&lt;/code>.
+&lt;img src="intel-app.png" alt="intelapp">&lt;/li>
+&lt;li>The head of your research group must then confirm your application.&lt;/li>
+&lt;li>Finally, you will receive an email from Intel (~1-5 days) granting access to the &lt;em>Intel Connectivity&lt;/em> web portal and online resources. Follow the instructions in the email you will receive.&lt;/li>
+&lt;/ul>
+&lt;h3 id="obtain-your-credentials">Obtain your credentials&lt;/h3>
+&lt;p>It is at this point that you will be granted access to the testbed and to the internal documentation.&lt;/p>
+&lt;p>Credentials for your user will be created at this step. Contact our &lt;a href="mailto:paolo.giaccone@polito.it?subject=#supernet#vpn">account manager&lt;/a> and ask for a new user. You will be provided with your credentials for the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>System login&lt;/em>: to access cluster&amp;rsquo;s nodes, see &lt;a href="https://sup4rnet.github.io/quickstart/getstarted/login">Login instructions&lt;/a>&lt;/li>
+&lt;li>&lt;em>Internal documentation&lt;/em> describing the network topology, the addressing scheme, some basic experiments for connectivity check and a walkthrough primer to move the first steps. See &lt;a href="http://restsrv01.polito.it/supernet/docs">Documentation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="set-up-vpn">Set up VPN&lt;/h3>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">This is not mandatory for Politecnico di Torino members&lt;/span>
+&lt;/div>
+&lt;p>The cluster is hosted at Politecnico di Torino (PoliTO) and only reachable from PoliTO campus network. If you are outside of Politecnico di Torino, you will need a VPN connection from your site to PoliTO network.&lt;/p>
+&lt;p>In order to simplify the management of VPN accounts, the preferred choice is to establish a site-to-site VPN between your respective institution and Politecnico di Torino. This is a one-time installation overhead and will not be repeated when new members of the same research group will join.&lt;/p>
+&lt;ul>
+&lt;li>You or the IT department of your institution must get in touch with the cluster admins e.g., via &lt;a href="mailto:paolo.giaccone@polito.it?subject=#supernet#vpn&amp;amp;cc=alessandro.cornacchia@polito.it">email&lt;/a>.&lt;/li>
+&lt;li>You will be provided with a spreadsheet and receive further instructions to fill it.&lt;/li>
+&lt;/ul>
+&lt;p>Requests for individual VPN accounts are granted to Politecnico di Torino members and &lt;em>may&lt;/em> be granted to external partners in the presence of special circumstances. This will be decided on a per-request basis.&lt;/p>
+&lt;/div>
+&lt;h2 id="next">Next:&lt;/h2>
+&lt;h3 id="for-support">For support:&lt;/h3>
+&lt;div class="hb-cards mt-4 grid gap-4 not-prose" style="--hb-cols: 1;">
+&lt;a
+class="hb-card group"href="https://sup4rnet.github.io/community" >
+&lt;span class="hb-card-title p-4">
+&lt;svg style="height: 1em; width: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/>&lt;/svg>Community&lt;/span>&lt;/a>
+&lt;/div>
+&lt;h3 id="once-ready">Once ready:&lt;/h3>
+&lt;div class="hb-cards mt-4 grid gap-4 not-prose" style="--hb-cols: 1;">
+&lt;a class="hb-card group"href="http://restsrv01.polito.it/supernet/docs" >
+&lt;span class="hb-card-title p-4">
+&lt;svg style="height: 1em; width: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5"/>&lt;/svg>Documentation&lt;/span>&lt;/a>
+&lt;/div></description></item><item><title>Access management</title><link>https://sup4rnet.github.io/quickstart/getstarted/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sup4rnet.github.io/quickstart/getstarted/login/</guid><description>&lt;p>This page describes the sharing policy for the resources in the cluster.&lt;/p>
+&lt;p>Machines in the cluster are classified into &lt;em>compute nodes&lt;/em> and &lt;em>network nodes&lt;/em>, as described in &lt;a href="https://sup4rnet.github.io/quickstart/overview">cluster overview&lt;/a>. The resource sharing policy is different for the two.&lt;/p>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">The following design may be subject to changes in the future, as the cluster is upgraded with new compute/network nodes.&lt;/span>
+&lt;/div>
+&lt;p>&lt;img src="tenant-access.jpg" alt="minifyme">&lt;/p>
+&lt;h3 id="compute-nodes">Compute nodes&lt;/h3>
+&lt;p>Each tenant has one or more virtual machine (VM) on the compute nodes, and can login into them independently. &lt;code>ssh&lt;/code> login to the VMs is always enabled. Virtual machines images comes pre-configured with Intel P4 Software Development Environment (SDE).&lt;/p>
+&lt;p>The virtual NICs (vNICs) of these VMs are bridged to the 100 Gbps dataplane network, therefore the VMs can communicate with the P4 switches directly. VMs should be privileged to run the experiments, though for performance critical experiments direct access to (some of) the nodes is also possible.&lt;/p>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">VMs are useful to let tenants to test simulataneously their P4 code for a Tofino target, &lt;a href="#testing-p4-code-without-access-to-tofino-asic">without having access to the physical Tofino ASIC&lt;/a>.&lt;/span>
+&lt;/div>
+&lt;h3 id="network-nodes">Network nodes&lt;/h3>
+&lt;p>Intel Tofino programmable data-plane hardware lacks the essential support for multi-tenancy.
+Currently, we do not implement any mechanism to overcome this limitation. See also &lt;a href="https://sup4rnet.github.io/blog/about-multitenancy/">About multi-tenancy in Tofino switches&lt;/a>. This means that no more than one tenant at a time will be granted access to the Tofino switches.&lt;/p>
+&lt;p>The Edgecore Wedge100BF-32X switches available in the cluster feature on board:&lt;/p>
+&lt;ul>
+&lt;li>an Intel Tofino P4 programmable dataplane ASIC&lt;/li>
+&lt;li>an x86 control plane CPU&lt;/li>
+&lt;/ul>
+&lt;p>It is from the control plane CPU that P4 programs are pushed to the Tofino ASIC.&lt;/p>
+&lt;p>A tenant willing to deploy and test its P4 code on SUP4RNET Tofino switches, must first reserve its own slot through a dedicated dashboard.&lt;/p>
+&lt;div class="hb-cards mt-4 grid gap-4 not-prose" style="--hb-cols: 1;">
+&lt;a
+class="hb-card group"href="http://restsrv01.polito.it:8080" target="_blank" rel="noreferrer">
+&lt;span class="hb-card-title p-4">
+&lt;svg style="height: 1em; width: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5a17.92 17.92 0 0 1-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/>&lt;/svg>Access the Tofino reservation dashboard&lt;/span>&lt;/a>
+&lt;/div>
+&lt;p>Once a slot has been reserved, a tenant will be granted exclusive access to the control plane CPU. The tenant can then login via &lt;code>ssh&lt;/code> using the account he/she obtained and perform operations on the switch.&lt;/p>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900">
+&lt;span class="pr-3 pt-1 text-red-400">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">&lt;strong>Prerequisite&lt;/strong>: you setup PoliTO VPN to access the dashboard.&lt;/span>
+&lt;/div>
+&lt;p>Isolation between tenants on the switch is implemented via Linux user accounts.&lt;/p>
+&lt;h4 id="testing-p4-code-without-access-to-tofino-asic">Testing P4 code without access to Tofino ASIC&lt;/h4>
+&lt;p>While the reservation mechanism to access the Tofino ASIC might be tedious, there is a way to prototype your P4 code on a Tofino emulator before deploying to the actual hardware. The Intel P4 SDE comes with a register-level Tofino emulator, which reproduces most of the pipeline features via software. Only some Tofino features are not supported by the emulator.&lt;/p>
+&lt;p>For all code that do not require these special features, we highly advise to first test your project on the emulator and move to the actual hardware when you are relatively confident about the correctness of your code.&lt;/p>
+&lt;p>This is especially recommended for inexperienced users for at least two reasons:&lt;/p>
+&lt;ol>
+&lt;li>A detailed log is available in the emulator and not on the ASIC&lt;/li>
+&lt;li>You don&amp;rsquo;t block any other tentant&lt;/li>
+&lt;/ol>
+&lt;h3 id="about-sudo-privileges">About sudo privileges&lt;/h3>
+&lt;p>All tenants are granted elevated privileges in their VMs.
+Instead, as a default policy, &lt;code>sudo&lt;/code> privileges are disabled for all tenants on the &lt;strong>switch OS&lt;/strong> and on the &lt;strong>server OS&lt;/strong>. Should any user demand elevated permissions, it must ask the cluster admins. Only if strictly necessary, &lt;code>sudo&lt;/code> privileges may be granted for specific commands and revoked when not needed anymore. In general, alternative solutions must be preferred.&lt;/p></description></item></channel></rss>
