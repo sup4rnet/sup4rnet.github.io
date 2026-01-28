@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://sup4rnet.github.io/sitemap.xml
